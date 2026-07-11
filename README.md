@@ -24,12 +24,14 @@ Dit project focust zich niet op security zoals authentication, dit project is oo
 
 - Database: MySQL, ik heb tabellen nodig
 Extraatje: Een ORM (Object relational mapping) framework wordt gebruikt om handig met de MySQL te praten en dingen te gaan doen.
+```
 +----------------------+----------------------------+-------------------------+------------------------+
 | Uren gewerkt (float) | Aantal minuten pauze (int) | Begintijd (UTC iso8601) | Eindtijd (UTC iso8601) |
 +----------------------+----------------------------+-------------------------+------------------------+
 |                  5.0 |                         30 | 2026-07-11T16:00:00Z    | 2026-07-11T21:00:00Z   |
 +----------------------+----------------------------+-------------------------+------------------------+
 
+```
 - Frontend/interface: React-native TSX met UI libraries (make-up)
 - Backend: Rust met een http framework
 - Communicatie fetchen, bijwerken en verwijderen gaat dmv REST
