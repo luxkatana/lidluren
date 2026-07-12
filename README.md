@@ -25,15 +25,40 @@ Dit project focust zich niet op security zoals authentication, dit project is oo
 - Database: MySQL, ik heb tabellen nodig
 Extraatje: Een ORM (Object relational mapping) framework wordt gebruikt om handig met de MySQL te praten en dingen te gaan doen.
 ```
-+----------------------+----------------------------+-------------------------+------------------------+
-| Uren gewerkt (float) | Aantal minuten pauze (int) | Begintijd (UTC iso8601) | Eindtijd (UTC iso8601) |
-+----------------------+----------------------------+-------------------------+------------------------+
-|                  5.0 |                         30 | 2026-07-11T16:00:00Z    | 2026-07-11T21:00:00Z   |
-+----------------------+----------------------------+-------------------------+------------------------+
-
++----------------------------+-------------------------+------------------------+
+| Aantal minuten pauze (int) | Begintijd (UTC iso8601) | Eindtijd (UTC iso8601) |
++----------------------------+-------------------------+------------------------+
+|                         30 | 2026-07-11T16:00:00Z    | 2026-07-11T21:00:00Z   |
++----------------------------+-------------------------+------------------------+
 ```
 - Frontend/interface: React-native TSX met UI libraries (make-up)
 - Backend: Rust met een http framework
-- Communicatie fetchen, bijwerken en verwijderen gaat dmv REST
+- Communicatie voor het fetchen, bijwerken en verwijderen van data gaat dmv REST
+
+
+## Milestones
+### M1: Startup (Initialiseren) 
+- [x] README.md maken
+- [x] cargo new
+- [ ] MySQL installatie 
+- [ ] Schema design
+### M2: Rust webserver & onderzoek
+- [ ] Zoeken naar een framework
+- [ ] Zoeken naar een ORM framework
+- [ ] Noteren endpoints die handig zijn
+- [ ] CRUD implementeren
+
+### M3: Frontend
+- [ ] React native initialiseren
+- [ ] Verdiepen in React native
+- [ ] UI Framework vinden
+- [ ] Gebruik van de APP vaststellen
+- [ ] Uren toevoegen
+- [ ] Uren verwijderen
+- [ ] Uren updaten
+- [ ] Uren laten zien
+
+### M4: Could have's implementeren
+- [ ] Dayforce API integreren
 
 
