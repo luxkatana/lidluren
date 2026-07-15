@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS lidluren;
+
+CREATE TABLE IF NOT EXISTS lidluren (
+	shiftid INT AUTO_INCREMENT NOT NULL,
+	begintime DATETIME NOT NULL,
+	endtime DATETIME NOT NULL,
+	dayforceplanned BOOLEAN DEFAULT true,
+	PRIMARY KEY (shiftid)
+)

@@ -40,8 +40,10 @@ Extraatje: Een ORM (Object relational mapping) framework wordt gebruikt om handi
 ### M1: Startup (Initialiseren) 
 - [x] README.md maken
 - [x] cargo new
-- [ ] MySQL installatie 
-- [ ] Schema design
+- [x] MySQL installatie 
+- [x] Schema design - **shiftID, begintime, endtime and dayforceplanned (boolean)**
+
+
 ### M2: Rust webserver & onderzoek
 - [ ] Zoeken naar een framework
 - [ ] Zoeken naar een ORM framework
