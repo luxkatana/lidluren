@@ -33,6 +33,15 @@ Extraatje: Een ORM (Object relational mapping) framework wordt gebruikt om handi
 ```
 - Frontend/interface: React-native TSX met UI libraries (make-up)
 - Backend: Rust met een http framework
+> Eisen voor de HTTP framework:
+    - Rust
+    - Versturen en ophalen van JSON moet gemakkelijk zijn (JSON validation)
+    - GET, POST, UPDATE en DELETE moeten mogelijk zijn
+    - Globale variabel thread-safe delen moet mogelijk zijn (Mutex<Arc<T>>)
+
+
+    
+
 - Communicatie voor het fetchen, bijwerken en verwijderen van data gaat dmv REST
 
 
@@ -45,8 +54,8 @@ Extraatje: Een ORM (Object relational mapping) framework wordt gebruikt om handi
 
 
 ### M2: Rust webserver & onderzoek
-- [ ] Zoeken naar een framework
-- [ ] Zoeken naar een ORM framework
+- [x] Zoeken naar een HTTP webserver framework **Actix web**
+- [x] Zoeken naar een ORM framework **SeaORM**
 - [ ] Noteren endpoints die handig zijn
 - [ ] CRUD implementeren
 

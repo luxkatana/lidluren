@@ -1,37 +1,18 @@
-use sqlx::mysql::MySqlPool;
+use actix_web::{self, App, HttpServer};
+use load_dotenv::load_dotenv;
+load_dotenv!();
 
-#[tokio::main]
-async fn main() -> Result<(), sqlx::Error> {
-    let pool = MySqlPool::connect("mysql://user:password@localhost/lidluren").await?;
-
-    sqlx::query(
-        "CREATE TABLE IF NOT EXISTS hours (
-            id INT AUTO_INCREMENT PRIMARY KEY,
-            uren_gewerkt INT NOT NULL,
-            aantal_minuten_pauze INT NOT NULL,
-            begintijd TIME NOT NULL,
-            eindtijd TIME NOT NULL,
-            datum DATE NOT NULL
-        )"
-    )
-    .execute(&pool)
-    .await?;
-
-    println!("Table 'hours' has been created successfully");
-    Ok(())
+#[actix_web::get("/")]
+async fn helloworld() -> &'static str {
+    "Hello"
 }
-fn main() {
-    println!("Hello, world!");
-
-fn print_ascii_table() {
-    let table = r#"
-    +----------------+---------------------+------------+----------+------------+
-    | Uren gewerkt   | Aantal minuten pauze | Begintijd | Eindtijd | Datum      |
-    +----------------+---------------------+------------+----------+------------+
-    |                |                     |            |          |            |
-    +----------------+---------------------+------------+----------+------------+
-    "#;
-
-    println!("{}", table);
-}
+#[actix_web::main]
+async fn main() -> std::io::Result<()> {
+    HttpServer::new(|| App::new().service(helloworld))
+        .bind((
+            "0.0.0.0",
+            env!("ACTIX_PORT").parse::<u16>().expect("ACTIX_PORT"),
+        ))?
+        .run()
+        .await
 }
