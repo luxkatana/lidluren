@@ -6,4 +6,4 @@ edition = "2024"
 [dependencies]
 actix-web = "4.14.0"
 load-dotenv = "0.1.2"
-sea-orm = "1.1.20"
+sea-orm = {version = "1.1.20", features=["sqlx-mysql", 'macros', "runtime-tokio-native-tls"]}

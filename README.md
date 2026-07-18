@@ -56,7 +56,9 @@ Extraatje: Een ORM (Object relational mapping) framework wordt gebruikt om handi
 ### M2: Rust webserver & onderzoek
 - [x] Zoeken naar een HTTP webserver framework **Actix web**
 - [x] Zoeken naar een ORM framework **SeaORM**
-- [ ] Noteren endpoints die handig zijn
+- [x] Noteren endpoints die handig zijn
+> http.http bestand representeert endpoints die handig kunnen zijn voor de shifts.
+
 - [ ] CRUD implementeren
 
 ### M3: Frontend

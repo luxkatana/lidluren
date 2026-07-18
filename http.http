@@ -1,0 +1,17 @@
+GET /shifts # Get shifts
+
+POST /shifts # Creation of a shift
+
+{
+"begintime": "...",
+"endtime": "...",
+}
+
+
+DELETE /shifts
+
+{
+"shiftid": 67
+}
+
+
