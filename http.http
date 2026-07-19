@@ -1,6 +1,6 @@
 GET /shifts # Get shifts
 
-POST /shifts # Creation of a shift
+PUT /shifts # Creation of a shift
 
 {
 "begintime": "...",
@@ -8,10 +8,19 @@ POST /shifts # Creation of a shift
 }
 
 
-DELETE /shifts
+DELETE /shifts?shiftid=<int>
+
+
+
+
+
+POST /shifts # Update shift
+
 
 {
-"shiftid": 67
+"shiftid": int,
+"begintime": new UTC ISO 8601 datetimestring,
+"endtime": new/old UTC ISO 8601 datetimestring,
+"dayforceplanned": new/old boolean
+
 }
-
-

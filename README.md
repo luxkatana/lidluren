@@ -59,7 +59,7 @@ Extraatje: Een ORM (Object relational mapping) framework wordt gebruikt om handi
 - [x] Noteren endpoints die handig zijn
 > http.http bestand representeert endpoints die handig kunnen zijn voor de shifts.
 
-- [ ] CRUD implementeren
+- [x] CRUD implementeren
 
 ### M3: Frontend
 - [ ] React native initialiseren
