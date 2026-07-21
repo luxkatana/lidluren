@@ -63,8 +63,8 @@ Extraatje: Een ORM (Object relational mapping) framework wordt gebruikt om handi
 
 ### M3: Frontend
 - [x] React native initialiseren
-- [ ] Verdiepen in React native
-- [ ] UI Framework vinden
+- [x] Verdiepen in React native
+- [x] UI Framework vinden **react native paper**
 - [ ] Gebruik van de APP vaststellen
 - [ ] Uren toevoegen
 - [ ] Uren verwijderen
