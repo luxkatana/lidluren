@@ -66,12 +66,23 @@ Extraatje: Een ORM (Object relational mapping) framework wordt gebruikt om handi
 - [x] Verdiepen in React native
 - [x] UI Framework vinden **react native paper**
 - [ ] Gebruik van de APP vaststellen
+
+***
+Pagina's: 
+Uren -> Lijst met Shifts (Cards)
+(could have) automatische clockin (zie M4, regel 1) -> Knop voor klok in/uit
+Automatische clock in gaat wss opgeslagen worden in een SQLite database 
+***
+
+
+
 - [ ] Uren toevoegen
 - [ ] Uren verwijderen
 - [ ] Uren updaten
 - [ ] Uren laten zien
 
 ### M4: Could have's implementeren
+- [ ] Clock in/out met 1 knop ipv handmatig registeren
 - [ ] Dayforce API integreren
 
 
