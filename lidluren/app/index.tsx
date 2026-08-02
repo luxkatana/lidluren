@@ -1,11 +1,12 @@
-import { PaperProvider } from "react-native-paper";
+import { PaperProvider, useTheme } from "react-native-paper";
 import App from "./App";
 
 
 export default function Home() {
+	const theme = useTheme();
 	return <>
 
-		<PaperProvider>
+		<PaperProvider theme={theme} >
 			<App />
 
 
