@@ -1,4 +1,5 @@
 mod entities;
+use actix_cors::Cors;
 use actix_web::{self, App, HttpResponse, HttpServer, http::StatusCode, web};
 use entities::{
     lidluren::{self, Model},
@@ -95,8 +96,13 @@ async fn main() -> std::io::Result<()> {
         .expect("Database string");
 
     assert!(db.ping().await.is_ok());
+
     HttpServer::new(move || {
+        let cors = Cors::default()
+            .allow_any_origin()
+            .allowed_methods(vec!["GET", "POST", "PUT"]);
         App::new()
+            .wrap(cors)
             .wrap(actix_web::middleware::Logger::default())
             .service(get_shifts)
             .service(create_shifts)
